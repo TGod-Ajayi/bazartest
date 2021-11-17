@@ -28,11 +28,10 @@ class ShipmentService {
 				return result;
 			}
 		} catch (error: any) {
-			console.log(error);
 			const result: IResult = {
 				data: null,
 				hasError: true,
-				error: error.response.data,
+				error: error,
 			};
 			return result;
 		}

@@ -11,9 +11,13 @@ const ShipmentListPage: FC = () => {
 	const [searched, setSearched] = useState<string>('');
 	const getDataFromServer = async () => {
 		const result = await ShipmentService.getShipments();
-		const sortedData = _.sortBy(result.data, 'id', 'asc');
-		setApiData(sortedData);
-		setData(sortedData);
+		if (result.data) {
+			const sortedData = _.sortBy(result.data, 'id', 'asc');
+			setApiData(sortedData);
+			setData(sortedData);
+		} else {
+			console.log('some error occured');
+		}
 	};
 	useEffect(() => {
 		getDataFromServer();
