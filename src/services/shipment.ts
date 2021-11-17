@@ -3,7 +3,7 @@
  * also persisting a shipment
  */
 import { axiosInstance } from '../networking/axiosClient';
-import { IShipmentData } from '../components/ShipmentList/types';
+import { IShipmentData } from '../components/Shipmentlist/types';
 
 class ShipmentService {
 	static async getShipments() {

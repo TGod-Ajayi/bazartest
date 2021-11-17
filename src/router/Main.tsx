@@ -1,8 +1,9 @@
 import React, { FC } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import ShipmentDetailsPage from '../pages/shipmentDetails';
-import ShipmentListPage from '../pages/shipmentList';
+import ShipmentDetailsPage from '../pages/shipmentdetails';
+
 import RouteNames from './routes';
+import ShipmentListPage from '../pages/shipmentlist';
 
 const MainAppRouter: FC = () => {
 	return (

@@ -1,6 +1,6 @@
 import React, { FC, useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { IShipmentData } from '../../components/ShipmentList/types';
+import { IShipmentData } from '../../components/Shipmentlist/types';
 import ShipmentService from '../../services/shipment';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';

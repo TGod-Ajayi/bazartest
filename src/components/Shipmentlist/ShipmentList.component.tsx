@@ -1,11 +1,11 @@
 import React, { FC, useState } from 'react';
-import { IProps } from './types';
+import { IProps } from '.';
 import { useNavigate } from 'react-router-dom';
 
 import { IHeadCell } from '.';
 import { TableCell, TableContainer, TableHead, TableRow, TableSortLabel, Table, Paper, Box, TableBody } from '@mui/material';
 import TablePagination from '@mui/material/TablePagination';
-import { IEnhancedTableProps } from '../ShipmentList/types';
+import { IEnhancedTableProps } from '.';
 import { visuallyHidden } from '@mui/utils';
 
 const ShipmentListComp: FC<IProps> = ({ data }) => {

@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useState } from 'react';
 import ShipmentService from '../../services/shipment';
-import ShipmentListComp from '../../components/ShipmentList/index';
-import { IShipmentData } from '../../components/ShipmentList/types';
+import ShipmentListComp from '../../components/Shipmentlist/index';
+import { IShipmentData } from '../../components/Shipmentlist/types';
 import SearchBar from 'material-ui-search-bar';
 import _ from 'lodash';
 
