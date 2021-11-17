@@ -74,16 +74,4 @@ interface IResult {
 	error: null;
 }
 
-const updateShipment = async () => {};
-const saveDataToCache = (data: IShipmentData[]) => {
-	const dataStringy = JSON.stringify(data);
-	localStorage.setItem('shipmentData', dataStringy);
-};
-const retrieveFromCache = () => {
-	const dataRaw = localStorage.getItem('shipmentData');
-	if (dataRaw) {
-		return JSON.parse(dataRaw);
-	}
-	return null;
-};
 export default ShipmentService;
